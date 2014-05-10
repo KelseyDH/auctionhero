@@ -1,0 +1,29 @@
+%h1 Welcome to Auction Hero
+
+%hr
+= link_to "Add Auction", new_auction_path, class: "btn btn-primary"
+%h2 Current Auctions ongoing:
+
+= render @auctions
+
+/ - @auctions.each do |auction|
+/   .well
+/     %h3
+/       = link_to auction.title, auction
+/     %br
+/     %h4
+/       %b 
+/         Description:
+/     %br
+/     %h4
+/       = auction.body
+/     %hr
+/     %h4 
+/       %b 
+/         Reserve Price:
+/       = "$#{auction.reserve_price}"
+/     %br
+/     %h4
+/       %b
+/         Ends:
+/       = auction.end_date

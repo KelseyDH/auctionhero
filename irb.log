@@ -1,0 +1,1001 @@
+@talent_skills = TalentSkill.all
+@job_skills = JobSkill.all
+@job_skills_job_id = JobSkill.all.job_listing_id
+@talent_skills.each{|ts| puts ts.skill_id }
+@job_skills.each{|js| puts js.skill_id}
+@job_skills_job_id.each{|js| puts js}
+@job_skills_job_id = JobSkill.all(job_listing_id)
+@job_skills_job_id.each{|js| puts js}@talent_skills = TalentSkill.all
+@job_skills = JobSkill.all
+@talent_skills.each{|ts| puts ts.skill_id }
+@job_skills.each{|js| puts js.skill_id}
+JobSkill.each{|js| puts js.skill_id }
+@job_skills.each{|js| puts js.skill_id}
+JobSkill.all.each{|js| puts js.skill_id }
+@job_skills.talent_id.each{|js| puts js.skill_id}
+@job_skills.talents.each{|js| puts js.skill_id}
+@job_skills.talent.each{|js| puts js.skill_id}
+@job_skills.talent.each
+@job_skills.talents.each
+JobListing.first
+jl.job_skills.all
+JobListing.find 3
+jl = Jo
+jl.job_skills.all
+@job_listing = JobListing.first
+x = JobListing.find(@job_listing)
+x.job_skills.all
+@job_listing = JobListing.find(3)
+x = JobListing.find(@job_listing)
+x.job_skills.all
+@job_listing = JobListing.find(3)
+job_skill_list = JobListing.find(@job_listing)
+job_skill_list.job_skills.all
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.job_skills
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.each {|ji| puts ji.skill_id}
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.each{|ji| puts ji.skill_id}
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.job_skills
+\@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.job_skills = @j_skills
+@j_skills.each{|js| puts js.skill_id }
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.job_skills 
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.job_skills 
+@talent_listing = TalentListing.find(1)
+talent_id = TalentListing.find(@talent_listing)
+talent_id.talent_skills @talent_skills.each{|ts| puts ts.skill_id }
+@talent_listing = TalentListing.find(1)
+talent_id = TalentListing.find(@talent_listing)
+@job_listing = JobListing.find(3)
+job_id = JobListing.find(@job_listing)
+job_id.job_skills@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills 
+@job_listing = JobListing.find(3)
+@job_id = JobListing.find(@job_listing)
+@job_id.job_skills@talent_skills = TalentSkill.all
+JobListing.first
+@job_skills = JobSkill.all
+@talent_skills.each{|ts| puts ts.skill_id }
+@job_skills.talents.each
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills.each{|ts| puts ts.skill_id} 
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills.each{|ts| puts ts.skills} 
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills.each{|ts| puts ts.skills} 
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills{|ts| puts ts.skills} 
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills{|ts| puts ts.skill_id} 
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills.count 
+@talent_skill = Talent.find(1)
+talent_id = Talent.find(@talent_skill)
+talent_id.talent_skills.length 
+@job_listing = JobListing.find(3)
+@job_id = JobListing.find(@job_listing)
+@job_id.job_skills
+@talent_skills.each{|ts| puts ts.skill_id }
+@talent_skills.Talent.find(1).each{|ts| puts ts.skill_id }
+@talent_skills = TalentSkill.find(1)
+@talent_skills.each{|ts| puts ts.skill_id }
+@talent_skills = TalentSkill.find(1)
+@talent_skills = TalentSkill.find(1)
+@talent_skills.each{|ts| puts ts.skill_id }
+JobListing.first
+@job_skills = JobSkill.all
+@job_skills.each{|js| puts js}
+@talent_skills = TalentSkill.find(1)
+@talent_skills.skill_id
+TalentSkill.find(1)
+@job_listing = JobListing.find(3)
+puts @job_listing.skill_ids
+@talent_listing = Talent.find(1)
+puts @talent_listing.skill_ids
+JobListing.all
+JobListing.find(3)
+@job_listing = JobListing.find(3)
+puts @job_listing.skill_ids
+@job_listing = JobListing.find(3)
+puts @job_listing.skill_ids
+@talent_listing = Talent.find(1)
+puts @talent_listing.skill_ids
+if @job_listing.skill_ids == @talent_listing.skill_ids
+  puts "match!"
+  else
+  puts "not a match!"
+end
+@all_talent = Talent.all
+@all_talent.each{|t| puts t.skill_ids }
+TalentSkills
+TalentSkills.all
+TalentSkils.all
+TalentSkill.all
+@job_listing.skill_ids
+Skill.all
+Skill.title
+@job_listing.skill_title
+@job_listing.skill_titles
+@job_listing.skill_id
+@job_listing.skill_ids
+s = Skill.find(2)
+s.title
+s2 = Skill.find(@job_listing.skill_ids)
+s2.title
+s2.titles
+s2.each do |x| puts x.title end
+s2.each do |x| puts x.title end
+s2 = Skill.find(@job_listing.skill_ids)
+@skills.each.map {|s| s.title}
+@skills.each.map {|s| s}
+Skill.index[1]
+Skill.all
+Skill.id(1)
+Skill.id[1]
+Skill.id("1")
+Skill.find("1")
+Skill.find("1").skills_id
+Skill.find("1").index
+Skill.find("1")
+Skill.find("1").title
+Skill.find("1").title
+talent.name
+@talents = Talent.all
+@talents.each do talent.skill_ids.count end
+@talents.each do talent.skill_ids end
+@talents.each do talent.first_name end
+exit
+Talent.all
+q = Talent.find(3)
+q.skill_id
+q.email
+User.all
+Talent.all
+User.full_name
+User.all
+User.find(1).full_name
+User.find(6).full_name
+exit
+Talent.all
+@talent = Talent.find(3)
+@talent.full_name
+Talent.find(nil)
+Talent.all(nil)
+Talent.all.nil
+Talent.all.user_id
+Talent.user_id
+exit
+exit
+Talent.all
+User.all
+JobSkills.all
+JobSkill.all
+TalentSkill.all
+q = User.find(4)
+q.add(skill_id: 1)
+b = User.find(4)
+b.talent.talentskills
+b.talent.talent
+b.talent.talent_skill
+b.talent.talent_skills
+b.talent.talent_skills
+b
+b.talent.talent_skills.skills
+b.talent.talent_skills.skills_ids
+b.talent.talent_skills.skill_ids
+b.talent.talent_skills
+b.talent.talent_skills.find 1
+b.talent.talent_skills(skill_id >> 1)
+b.talent.talent_skills(skill_id: 1)
+b.talent.talent_skills.find 1
+b.talent.talent_skills
+TalentSkill.all
+Skill.all
+skill = Skills.first
+skill = Skill.first
+b.talent.talent_skills << skill
+b.talent.talent_skills << skill
+clear
+b.talent.talent_skills = skill
+b = User.find (4)
+b.email
+b.email = "billygates@rich.com"
+b.talent.talent_skills
+b.talent.talent_skills.skill_ids
+b.talent.talent_skills.skill_id
+b.talent..skill_id
+b.talent.skill_id
+b.talent.talent_skills.skill_id
+b.talent.talent_skills.skills
+b.talent.talent_skills.title
+b.talent.talent_skills.new
+b.talent.talent_skills
+b.talent.talent_skills
+b.talent.talent_skills.skill_id
+b.talent.talent_skills.skill_ids
+skill
+b.talent.talent_skills.new(skill_id: 1)
+b.talent.talent_skills.new(skill_id: 2)
+b.talent.talent_skills.create(skill_id: 2)
+b.talent.talent_skills.create(skill_id: 1)
+b.talent.talent_skills.create(skill_id: 3)
+b.talent.talent_skills.create(skill_id: 1)
+b.talent.talent_skills
+b.talent.talent_skills
+b.talent.talent_skills.find_by_skill_id
+b.talent.talent_skills.find_by_skill_id(1).destroy\
+b.talent.talent_skills
+b.talent.talent_skills.find_by_skill_id(1).destroy
+b.talent.talent_skills
+b.talent.talent_skills.find_by_id(1).destroy
+b.talent.talent_skills
+b.talent.talent_skills.destroy
+b.talent.talent_skills
+TalentSkill.all
+b.talent.talent_skills
+TalentSkill.all
+b.skill_id
+q = Talent.find(1)
+q.skill_ids
+c = [1, 2, 3, 4, 5, 6]
+m = [2, 3, 5, 6, 7]
+c - m
+c
+n = [2, 3, 5, 6, 7, 8, 9, 10]
+c - n
+n = [2, "3", "five", 6, 7, 8, 9,]
+c - n
+a = ["cat","dog","sheep"]
+b = ["cat", "human"]
+a - b
+b = ["sheep", "cat"]
+a - b
+exit
+Talent.all
+Talent.find(1)
+Talent.find(6)
+User.all
+Admin.all
+TalentSkill.all
+JobListing.all
+Talent.all
+Skill.all
+TalentSkill.all
+Talent.all
+exit 
+Talent.all
+exit
+exit
+18.times { FactoryGirl.create(:comment)
+18.times { FactoryGirl.create(:comment)}
+18.times { FactoryGirl.create(:comment)}
+18.times { FactoryGirl.create(:comment)}
+exit
+nd
+18.times { FactoryGirl.create(:comment)}
+exit
+exit
+rspec spec/controllers/questions_controller_spec.rb
+rspec spec/controllers/questions_controller_spec.rb
+exit
+exit
+Delayed::Job.all
+exit
+User.all
+k = User.first
+k(is_admin: true)
+k.add(is_admin: true)
+User.first(is_admin: true)
+User.first[is_admin: true]
+k
+k(is_admin: true)
+k.is_admin?
+k.is_admin = true
+k.is_admin?
+exit
+100.times { Campaign.create(title: Faker::Company.bs, details: Faker::Lorem.paragraph, target: rand(1000000, end_date: ()))}
+100.times { Campaign.create(title: Faker::Company.bs, details: Faker::Lorem.paragraph, target: rand(1000000, end_date: ()))}
+100.times{ Campaign.create(title: Faker::Company.bs, details: Faker::Lorem.paragraph, target: rand(1000000, end_date: ()))}
+end
+100.times{ Campaign.create(title: Faker::Company.bs, details: Faker::Lorem.paragraph, target: rand(1000000, end_date: ()))}
+end
+100.times{ Campaign.create(title: Faker::Company.bs, details: Faker::Lorem.paragraph, target: rand(1000000), end_date:(Time.now+10.day) )}
+exit
+Orientation.all
+User.all
+User.all
+@orientation = Orientation.find(1)
+@orientation = Orientation.find(params[1])
+User.all
+User.first(school_id: 1)
+end
+User.all
+k
+Orientation.all
+School.all
+User.all
+k
+k = User.find[1]
+k = User.find(1)
+k
+k.school_id = 1
+School.all
+k
+School.all
+Orientation.all
+Mission.all
+Mission.orientation_id
+Missions.new(name: "Mission 1", description: "This is the first mission to tackle!"
+end
+Missions.new(name: "Mission 1", description: "This ifirst mission to tackle!"
+Missions.new(name: "Mission 1", description: "This ifirst mission to tackle!", orientatiid
+end
+end
+Missions.new(name: "Mission 1", description: "This ifirst mission to tackle!", orientation_id: 1)
+exit
+User.last
+User.last
+exit
+u = User.new
+u.save
+u.email = "kelseyh@gmail.com"
+u
+u.save
+m = Moderator.new
+m.save
+m.errors_full_messages
+m.errors.full_messages
+m.first_name = "kelsey"
+m.save
+m.errors.full_messages
+m.last_name = "hannan"
+m.first_name = "kelsey"
+m.save
+m
+m.email = "kelsey@kelsey.com"
+m.save
+User.last
+exit
+c
+c = Campaign.first
+c = Campaign.first
+c = Campaign.first
+exit
+exit
+c = Campaign.first
+c.draft?
+c.state == "draft"
+Campaign.update_all(state: :draft)
+c.draft?
+c = Campaign.first
+c.state == "draft"
+c.draft?
+c.published?
+c.publish
+c.published?
+c.complete
+c.expire
+c.cancel
+c.complete?
+c
+User.all
+c1 = Campaign.user.first
+c1 = Campaign.find(1)
+c1 = Campaign.find(2)
+c1 = Campaign.user_id(1)
+Campaign.user_id(1)
+Campaign.user_id
+c = Campaign.first
+c.user_id = 1
+c.draft?
+c.status
+c.state
+c2 = Campaign.find(2)
+c2.user_id = 1
+c2.state
+c2.publish
+c2.publish?
+c2.state
+c2.published?
+Campaign.update_all(state: :published)
+exit
+Campaign.find_each(&:save)
+Campaign.find_each(&:save)
+exit
+Campaign.find_each(&:save)
+exit
+my_array = [1,2,3,4]
+method_name = :length
+my_array.send(method_name)
+@campaign = Campaign.first
+@campaign = Campaign.first
+association = :reward_levels
+@campaign.send(association)
+@campaign.save
+@campaign
+@campaign.reward_levels
+@campaign.reward_level
+exity
+exit
+Campaign.find_each(&:save)
+exit
+exit
+User.all
+user = User.first
+Stage.all
+@stage = Stage.first
+@stage.question
+Question.all
+@stage.all
+@stage.questions
+@stage.questions.answers
+@stage.questions.answer
+@stage.questions.all
+@stage.questions.answers
+@stage.questions(1)
+@stage.questions[1]
+@stage.questions[1].answers
+@stage.questions[1].answers("Cafeteria")
+@stage.questions[1].answers.find("Cafeteria")
+@stage.questions[1].answers.fetch("Cafeteria")
+@stage.questions[1].answers.fetch["Cafeteria"]
+@stage.questions[1].answers["Cafeteria"]
+@stage.questions[1].answers("Cafeteria")
+@stage.questions[1].answers(1)
+@stage.questions[1].answers[1]
+@stage.questions[1].answers[1].correct?
+@stage.questions[1].answers[1]
+@stage.questions[0].answers[1]
+@stage.questions[0].answers
+@stage.questions[0].answers[0]
+@stage.questions[0].answers[0].correct?
+user.stage
+user
+UserStage.all
+UserStage.empty?
+User.all
+Stage.all
+user
+us1 = UserMission.new(user_id: 1, mission_id: 1)
+us1 = UserMission.new(user_id: 1, mission_id: 1, available: true)
+us1.save
+UserMission.all
+Stage.all
+us1 = UserStage.new(user_id: 1, stage_id: 1)
+us1 = UserStage.new(user_id: 1, stage_id: 1)
+us1.save
+us1
+us1 = um1
+um1 = us1
+um1
+um1.save
+usone = UserStage.new(stage_id: 1, user_id: 1)
+exi
+exit
+user
+user = User.first
+User.has_finished_stage?
+Question.all
+user
+Stage.questions[1].answers[1]
+Stage.all
+Stage.questions
+Question.all
+Question.answers
+Question.all
+q = Question.first
+q.answers
+user.userstage
+UserStage.all
+q.answers
+q.answers[2]
+q.answers[2].correct?
+Stage.questions[1].answers[1]
+answer = Stage.first.questions[1].answers[1]
+answer = Stage.first.questions[1].answers[1].correct?
+answer = Stage.first.questions[1].answers[1].correct?
+"quiz".pluralize
+exit
+y
+exit
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+SecureRandom.hex
+User.last
+User.first
+ApiKey.first
+u = User.last
+u.api_key
+rspec spec/
+end
+ApiKey.first.access_token
+y
+exit
+my_array = [1,2,3,4]
+method_name = :length
+my_array.send(method_name)
+@compaign
+@campaign
+@campaign = Campaign.first
+association = :reward_levels
+@campaign.send(association)
+my_array.send(method_name)
+exit
+User.all
+user1 = User.first
+user1.address
+user 2 = User.last
+user2 = User.last
+user2.address
+user2.address = 226 Archibald st.
+end
+exit
+User.all
+user1 = User.first
+user1.lat
+user1.latitude
+Campaign.all
+c = Campaign.first
+c.address = 88 west pender vancouver bc
+c.address = "88 west pender vancouver bc"
+c.save
+u
+user1
+user1.address
+user1.address
+Campaign.all
+c = Campaign.first
+c.reward_levels
+user1.address
+user1
+c
+user1.address = "89 west pender vancouver bc"
+user1.address
+user1.address = "89 west pender vancouver bc"
+user1.address = "89 west pender"
+exit
+y
+exit 
+User.all
+u = User.first
+u.address
+u
+y
+exit
+x = []
+x.fill(5)
+x
+x.push(1..5)
+x
+x.push[1...3]
+x
+x.length
+x << 4
+x.fill(6)
+x.fill[7]
+x.map{|x| x *2}
+x
+x.map{|x| x *2}.save
+x.map{|x| x *2}!
+end
+x
+
+x.map!{|x| x *2}
+x
+10.times(puts "hello")
+10.times{puts "hello"}
+1.upto100{puts "hello"}
+1.upto(100) {puts "hello"}
+1.upto(100).push {|x| puts x}
+1.upto(100).push{|x| puts x}
+1.upto(100).push(|x| puts x)
+1.upto(100).push(puts x)
+1.upto(100).push[1] 
+1.upto(100).push
+1.upto(100)
+end
+for 1 in 10
+puts x
+end
+x
+x.find(1)
+x.fetch(1)
+x.fetch(3)
+x.fill(100)
+x
+x.push(100)
+x.push(103)
+x.push( 1.upto(10) )
+x.map{ |x| x *3}
+for x in (1..4)
+x
+end
+x
+x.all
+class car
+def vroom
+puts "going fast now!"
+end
+end
+x = 2
+puts x
+sqrt(9)
+sqrt9
+puts 6^2
+x
+x^2
+x^3
+x-3
+10^2
+x
+x
+x^3
+x^4
+x
+10^10
+2^10
+8^88
+5^50
+5%50
+50^5
+50%5
+2%6
+exit
+require "twitter"
+require twitter
+exit
+gem install twitter
+end
+gem install twitter
+exit
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.follow("kelsoh")
+client.follow("kelsoh")
+client.sample do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.tweets("kelsoh")
+end
+client.user_timeline("kelsoh")
+client.user_timeline("kelsoh")
+client.friends.first
+require "twitter"
+require 'twitter'
+gem install twitter
+exit
+require "twitter"
+exit
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.friends
+exit
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client = Twitter::Streaming::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+topics = ["coffee", "tea"]
+client.filter(:track => topics.join(",")) do |object|
+puts object.text if object.is_a?(Twitter::Tweet)
+end
+client.user do |object|
+  case object
+  when Twitter::Tweet
+    puts "It's a tweet!"
+  when Twitter::DirectMessage
+    puts "It's a direct message!"
+  when Twitter::Streaming::StallWarning
+    warn "Falling behind!"
+  end
+end
+cend
+client.friends.all
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.friends.all
+client.friends.to_a
+client.user.friends.first
+client
+exit
+require 'twitter'
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+exit
+require 'twitter'  client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+exit
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3nXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9jGUgOcY81RKJv"
+end
+exit
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.friends
+exit
+require "twitter"
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.friends
+exit
+require 'twitter'
+exit
+require 'twitter'
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.sample do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+client.friends.first
+client.friends.to_a
+client.friends.take(20)
+client.friends.take(20)
+end
+client.friends.first
+tweet_count
+client.update("Today I'm programming with Twitter's APi.. if you see this tweet, then I successfully set it up. #rails :)"
+emd
+end
+client.friends.first
+client.search("to:justinbieber marry me", :result_type => "recent").take(3).collect do |tweet|
+  "#{tweet.user.screen_name}: #{tweet.text}"
+end
+client.search("to:justinbieber marry me", :result_type => "recent").take(3).collect do |tweet|
+  "#{tweet.user.screen_name}: #{tweet.text}"
+end
+client.update("Programming with Twitter's APi today.. if you see this tweet, then my code worked! #rails)
+end
+end
+exit
+exit
+exit
+require 'twitter'
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+client.user_timeline("ruby")
+client.update("Programming w/ Twitter's API today, if you see this tweet then my code worked :) #rails")
+client.search("to:justinbieber marry me", :result_type => "recent").take(3).collect do |tweet|
+  "#{tweet.user.screen_name}: #{tweet.text}"
+end
+client.search("to:justinbieber marry me", :result_type => "recent").take(3).collect do |tweet|
+  "#{tweet.user.screen_name}: #{tweet.text}"
+end
+client.search("to:justinbieber marry me", :result_type => "recent").take(15).collect do |tweet|
+  "#{tweet.user.screen_name}: #{tweet.text}"
+end
+client = Twitter::Streaming::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+end
+exit
+require 'twitter'
+client = Twitter::Streaming::Client.new do |config|
+  config.consumer_key        = "4SJaarSLvlfNIOy4ggnNpJuNC"
+  config.consumer_secret     = "ROhoVumb7uAQYW6i2fGyshdr965rYU5Rin0CXpIwFL9eTa2hDG"
+  config.access_token        = "17690790-ZgKhCrOfMKzxx2SPrf9C3AXETywBNrB1hfMq4ouga"
+  config.access_token_secret = "X6WtgszbSxAHH3W68qOIFCbW5zRIGWn9TGUgOcY81RKJv"
+end
+topics = ["weather", "storm"]
+client.filter(:track => topics.join(",")) do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+topics = ["bieber", "justin"]
+client.filter(:track => topics.join(",")) do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+topics = ["cryptocurrency", "bitcoin"]
+client.filter(:track => topics.join(",")) do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+topics = ["#NasiGudegPosPolisiMeruya", "#EstoyLocoPor"]
+client.filter(:track => topics.join(",")) do |object|
+  puts object.text if object.is_a?(Twitter::Tweet)
+end
+y
+exit
+project = Project.new
+project.valid?
+project = Project.new
+project = Project.new(title: "get shit done!", description: "this is where I describe it")
+project.save
+@projects = Project.all
+17.times {FactoryGirl.create(:project) }
+exit
+17.times {FactoryGirl.create(:project) }
+17.times {FactoryGirl.create(:project) }
+17.times {FactoryGirl.create(:project) }
+end
+exit
+17.times {FactoryGirl.create(:project) }
+exit
+Auction.all
+@auction = Auction.all
+@auction = Auction.first
+auction.title
+@auction.title
+    auction.bids.ordered_by_amount.first    
+@auction.bids.ordered_by_amount.first
+@auction
+@auction.bids
+a = Auction.first
+a.bids
+a.bid
+a
+y
+exit
+  let(:auction) { create(:auction) }
+require 'spec_helper'
+require "spec_helper"
+require "spec_helper.rb"
+require "/spec_helper.rb"
+require "\spec_helper.rb"
+Auction.all
+Bid.all
+@auction.bids
+@auction
+@auction = Auction.last
+@auction.bids
+@auction.bids.ordered_by_price
+@auction.bids.ordered_by_amount
+@auction.bids.ordered_by_amount.amount
+@auction.bids.ordered_by_amount.first.amount
+exit
+@auction
+@auction = Auction.last
+@auction.current_price
+@auction.current_price
+exit
+@auction
+@auction = Auction.last
+@auction.current_pric
+@bid = @auction.bids.new
+@bid.minimum_bid_price
+@bid.auction
+@bid.auction.current_price
+@bid
+exit
+@bid 
+@auction = Auction.bids.last
+@auction = Auction.last
+@auction.bids.last
+@bid = @auction.bids.new
+exit
+@auction = Auction.last
+@auction.current_price
+end
+@auction
+@auction
+@auction.bids
+@auction.bids.all
+esxi
+exit
+a = Auction.last
+a.current_price
+y
+exit
+a = Auction.last
+a.current_price
+@bid = a.bids.new
+@bid.status
+@bid.true?
+@bid
+@bid.class
+@bid.amount = 19
+@bid.save
+ennd
+end
+@bid
+exit
+a = Auction.last
+@bid = a.bids.new
+@bid = a.bids.new(amount: 19)
+@bid = a.bids.new(amount: 21)
+@bid = a.bid.new(amount: 21)
+@bid = Auction.last.bids.new
+@auction
+@auction = Auction.last
+a = @auction.bids.new
+Bid.all
+exit
+@auction = Auction.last
+Bid.all
+@auction.current_price
+!
+end
+@auction
+@auction.current_price
+exit
+exit

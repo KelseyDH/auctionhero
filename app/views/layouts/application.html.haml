@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Auctionhero
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    -# if user_signed_in?
+      hello
+      =# button_to "sign out", destroy_user_session_path, method: :delete, class: "btn btn-primary"
+    -# else
+      =# link_to "sign in", new_user_session_path, class: "btn btn-primary"
+    %h1= link_to "Auction Hero", root_path
+    %br
+    - if flash[:notice] 
+      .alert.alert-success= flash[:notice]
+    - elsif flash[:error]
+      .alert.alert-danger= flash[:error]
+    %hr
+    = yield

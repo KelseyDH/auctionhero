@@ -1,0 +1,43 @@
+%h1= @auction.title
+%p= @auction.body
+
+= link_to "Edit", edit_auction_path(@auction), class: "btn btn-primary"
+|
+= link_to "Delete", @auction, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger"
+%hr
+
+%h2
+  Last bid:
+  - if @auction.bids.present?
+    = "$#{@auction.current_price}"
+
+#bid-errors
+= simple_form_for [@auction, Bid.new] do |f|
+  = f.input :amount, label: "Bid Amount $", placeholder: "100"
+  %br
+  = f.submit "Place Bid!", class: "btn btn-success"
+  .glyphicon.glyphicon-hand-up
+
+%br
+.row
+  .col-sm-6
+    Latest Bids... (going once...)
+    .well
+      #pending-bids.droppable
+        - @bids.each do |bid|
+          .well.draggable{data: {url: auction_bid_path(@auction, bid)}}
+            .glyphicon.glyphicon-usd
+            = bid.amount
+            %br
+            = "Placed on: #{formatted_date(bid.created_at)}"
+
+
+/ .row
+/   .col-sm-6
+/     Latest Bids
+/     .well
+/       - @bids.each do |bid|
+/         %br
+/         %hr
+/         .glyphicon.glyphicon-usd
+/           = bid.amount
