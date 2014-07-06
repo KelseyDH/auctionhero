@@ -1,4 +1,3 @@
-@talent_skills = TalentSkill.all
 @job_skills = JobSkill.all
 @job_skills_job_id = JobSkill.all.job_listing_id
 @talent_skills.each{|ts| puts ts.skill_id }
@@ -998,4 +997,14 @@ end
 @auction
 @auction.current_price
 exit
+exit
+@auction = Auction.last
+@bid = @auction.bids.new
+@bid
+@auction.current_price
+@bid.amount = 30
+@bid
+bid_check(@bid)
+Bid.bid_check(@big)
+"amount".pluralize
 exit
